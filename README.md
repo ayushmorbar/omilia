@@ -45,6 +45,7 @@ We aim to improve our project by implementing the following features:
 2. Try to include less appreciated indian dialects.
 
 ## Contributors
+* Ayush Morbar
 * Soham Kukreti
 * Yuvraj Rathi
 * Satyam Rathi

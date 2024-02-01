@@ -9,16 +9,17 @@ from platformers.hindi_platformer import HindiPlatformer
 
 pygame.init()
 
-
 def language_call():
-    # Load the start page image
+    # Get the screen resolution
+    infoObject = pygame.display.Info()
 
-    screen_width = 1000
-    screen_height = 1000
-
-    screen = pygame.display.set_mode((screen_width, screen_height))
+    # Set up the screen
+    screen_width = infoObject.current_w
+    screen_height = infoObject.current_h
+    screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
     pygame.display.set_caption("Omilia")
 
+    # Load the start page image
     englishImg = pygame.image.load("menuAssets/English_Button.png")
     hindiImg = pygame.image.load("menuAssets/Hindi_Button.png")
     banglaImg = pygame.image.load("menuAssets/Bengali_Button.png")

@@ -1,14 +1,16 @@
 import sys
-
 import pygame
 
 pygame.init()
 
-screen_width = 1000
-screen_height = 1000
-screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Game Over")
+# Get the screen resolution
+infoObject = pygame.display.Info()
 
+# Set up the screen
+screen_width = infoObject.current_w
+screen_height = infoObject.current_h
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
+pygame.display.set_caption("Game Over")
 
 def endscreen():
     # Load the help page image
